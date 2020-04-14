@@ -19,6 +19,8 @@
         - [Etapas do processo](#-etapas-do-processo)
         - [Vantagens](#-vantagens)
         - [Desvantagens](#-desvantagens)
+- [Engenharia de requisitos (2º PowerPoint)](#processos-de-software)
+  - [O que s]
 
 ## Processos de Software
 
@@ -123,3 +125,69 @@
 
 **[`^        para cima        ^`](#)**
 
+## Engenharia de Requisitos
+
+**[`^        para cima        ^`](#)**
+
+### Requisitos
+
+#### O que sao requisitos
+
+- Descrições do sistema;
+- Restrições do sistema;
+- Identificados durante o processo de engenharia de requisitos.
+
+#### Tipos de requisitos
+
+- Requisitos do Utilizador
+  - Frases escritas em língua natural;
+  - Diagramas de serviços do sistema;
+  - Restrições de utilização/operação;
+  - Escritos para os clientes;
+
+**Ex**: “O sistema deve gerar relatórios mensais com o custo dos medicamentos receitados por cada
+clínica, durante o mês em questão”.
+
+- Requisitos do Sistema
+  - Documento estruturado;
+  - Descrições detalhadas das funcionalidades do sistema e dos serviços;
+  - Restrições de utilização/operação;
+  - Define o que deve ser implementado;
+
+**Ex**: “No último dia de cada mês, deve ser feito um gerado um relatório com todos os medicamentos
+receitados, o seu custo e a clínica que os receitou.”
+
+#### System stakeholders
+
+- Qualquer pessoa
+  - que esteja relacionada com o sistema;
+  - que tenha algum interesse no sistema.
+
+-Tipos de stakeholders
+  - Utilizadores finais;
+  - Gestores do sistema;
+  - Donos do sistema;
+  - Stakeholders externos;
+
+#### Requisitos funcionais
+
+- Descrevem as funcionalidades do sistema
+
+- Dependem de:
+  - Tipo de software;
+  - Utilizadores do sistema;
+  - Tipo do sistema onde o software vai ser usado.
+
+- Requisitos funcionais de utilizador;
+  - Descrições de alto-nível sobre o que o sistema deve fazer.
+- Requisitos funcionais do sistema:
+  - Descrição detalhada sobre os serviços do sistema
+
+- Devem ser consistentes e “completos”;
+- Completos, incluir todas as descrições;
+-Consistentes, não existir conflitos ou contradições.
+
+#### Requisitos nao funcionais
+
+- Definem propriedades e restrições ao sistema.
+  - **Ex:**
