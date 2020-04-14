@@ -190,4 +190,195 @@ receitados, o seu custo e a clínica que os receitou.”
 #### Requisitos nao funcionais
 
 - Definem propriedades e restrições ao sistema.
-  - **Ex:**
+  - **Ex:** fiabilidade, tempo de resposta requisitos de storage, dispositivos de I/O, etc.
+- Requisitos ssobre o processo de Software
+  - **Ex:** uso de um IDE específico, de uma linguagem ou de um método de desenvolvimento
+- Podem ser mais críticos que os funcionais
+- Podem afetar o sistema de forma global
+
+Tipos:
+
+- Requisitos do produt
+  - Requisitos que especificam qual o comportamento do sistema
+- Requisitos organizacionais
+  - Requisitos que resultam das politicas e procedimentos da organização/empresa
+- Requisitos externos
+  - Requisitos relacionados com factores externos ao sistema
+
+## Processos Engenharia de Requisitos
+
+- Variam dependendo de:
+  - Domínio de aplicação;
+  - Pessoas envolvidas;
+  - Entidade que desenvolve os requisitos;
+
+### Identificacao dos Requisitos
+
+- Descoberta de requisitos;
+- Trabalho conjunto da equipa técnica com os clientes por forma a descobrir:
+  - o domínio da aplicação;
+  - os serviços que devem ser fornecidos;
+  - restrições de operação/utilização;
+- Pode envolver todos os stakeholders:
+  - Utilizadores finais;
+  - Gestores;
+  - Engenheiros envolvidos na manutenção
+
+#### Problemas na Identificacao dos Requisitos
+
+- Stakeholders não sabem o que realmente querem;
+- Stakeholders expressam os requisitos nos seus termos próprios;
+- Diferentes stakeholders podem ter requisitos com conflitos;
+
+#### Processo de identificacao e analise de requisitos
+
+1. Descoberta dos Requisitos
+  - Interagir com todos os stakeholders por forma a descobrir os requisitos
+  - Requisitos de domínio são também identificados
+  - Fazer a distinção entre requisitos de utilizador e de sistema
+
+2. Clarificação e organização dos requisitos
+  - Agrupar requisitos relacionados
+  - Organizá-los em conjuntos coerentes
+
+3. Priotarizaçãp e negociação do requisitos
+  - Atribuir prioridades
+  - Resolver conflitos entre requisitos
+
+4. Especificação de requisitos
+  - Escrita dos requisitos
+
+### Cenarios
+
+- User story estruturada;
+- Devem incluir:
+  - Descrição da situação inicial (ou ponto de partida);
+  - Descrição do fluxo normal de eventos;
+  - Descrição do que pode correr mal;
+  - Informação sobre outras atividades concorrentes;
+  - Descrição do estado do sistema quando o cenário termina.
+
+### Especificacao de requisitos
+
+- Processo de escrever os requisitos
+  - requisitos de sistema e de utilizador
+  - documento de requisitos
+- Os requisitos devem ser de fácil compreensão
+- Os requisitos devem ser detalhados
+- Os requisitos devem ser o mais completo possiveis
+
+#### Formas de escrever os requisitos
+
+- Em linguagem natural.
+- De forma estruturada
+- Com anotações gráficas
+- Com especificações metemáticas
+
+#### Requisitos e desenho do sistema
+
+- Preferencialmente 
+  - Especificam o que o sistema deve fazer;
+  - Descreve como é feito.
+
+- Na prática, requisitos e desenho são inseparáveis
+  - A arquitetura do sistema pode ser desenhada para estruturar os requisitos
+
+#### Especificação em língua natural
+
+- Requisitos são escritos em língua natural, complementados com diagramas e tabelas;
+
+- A linguagem natural é:
+  - Expressiva
+  - Intuitiva
+
+#### Escrita dos requisitos – Guião
+
+- “Criar” um formato standard para todos os requisitos;
+- Usar linguagem de forma consistente:
+  - Usar “deve” para requisitos obrigatórios
+  - Usar “pode” para requisitos desejáveis
+- Usar text highlight para identificar aspetos importantes do requisito
+- Evitar termos técnicos;
+- Explicar o porque do requisito
+
+#### Problemas da Linguagem Natural
+
+- Falta de clareza
+- Confusão de requisitos, os requisitos funcionais e nao funcionais misturam-se entre si;
+- Junção dos requisitos
+
+#### Especificações estruturadas
+
+- Abordagem para escrever requisitos:
+  - Liberdade limitada para descrever os requisitos;
+  - Escritos seguindo um padrao espeicfico.
+
+- Funciona bem para alguns tipos de sistema
+
+#### Espeicificações baseadas em formulários
+
+- Definição da funcionalidade ou entidade;
+- Descrição dos inputs e qual a sua origem;
+- Descrição dos outputs e qual o seu destino;
+- Informação sobre a dados/informação e outras entidades necessárias;
+- Descrição das ações a serem tomadas;
+- Pré e pós condições (se existirem);
+- Efeitos secundários (se existirem);
+
+#### Especificação tabular
+
+- Usada para complementar a língua natural;
+- Útil
+
+#### Use Cases
+
+- Tipo de cenários:
+  - Fazem parte do UML
+
+- Identificam:
+  - Atores;
+  - Numa interação com o sistema
+
+- Modelo gráfico de alto nível:
+  - Complementado com uma descrição tabular
+
+- Diagrama de sequências (UML):
+ Podem ser usados para detalhar os use cases;
+
+#### Documentos de requisitos
+
+- Documento oficial que indicia à equipa de desenvolvimento o que é esperado do sistema;
+- Deve incluir a definição dos requisitos de utilizador bem como os requisitos do sistema;
+- Deve dizer o que o sistema deve fazer
+
+Formato: 
+- Não existe um formato único
+- Informação no documento de requisitos depende do tipo de sistema a ser desenvolvido e da
+abordagem de desenvolvimento
+- Sistemas desenvolvidos de forma incremental, tipicamente, têm um documento de requisitos
+menos detalhado
+
+- Existem alguns standards para o documento de requisitos
+  - IEEE
+  - Usados apenas a projetos grandes
+
+#### Validação dos requisitos
+
+- Demonstrar que os requisitos definem o sistema que se pretende implementar;
+
+- Como validar
+  - Validade dos requisitos;
+  - Consistência;
+  - Completude;
+  - Realismo;
+  - Verificabilidade;
+
+#### Gestão dos requisitos
+
+- Processo de gerir as alterações dos requisitos durante todo o processo
+  - Aparecimento de novos requisitos;
+  - Gerir dependências entre requisitos;
+
+- Estabelecer um processo formal
+  - efetuar alterações nos requisitos
+  - estabelecer ligações entre requisitos
