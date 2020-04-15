@@ -68,6 +68,21 @@
       - [Análise de requisitos](#an%c3%a1lise-de-requisitos)
       - [Design](#design)
       - [Documentação](#documenta%c3%a7%c3%a3o)
+  - [Use Cases](#use-cases-1)
+    - [O que sao](#o-que-sao)
+    - [Cenarios](#cenarios-1)
+    - [Engenharia de requisitos](#engenharia-de-requisitos-1)
+    - [Elementos básicos](#elementos-b%c3%a1sicos)
+    - [Conteudo de um Use Case](#conteudo-de-um-use-case)
+    - [Cada Use Case](#cada-use-case)
+    - [Como identificar atores](#como-identificar-atores)
+    - [Identificar Guidelines](#identificar-guidelines)
+    - [Diagrama de Use Cases](#diagrama-de-use-cases)
+      - [Atores](#atores)
+      - [Use Cases](#use-cases-2)
+      - [Associações](#associa%c3%a7%c3%b5es)
+      - [Outras utilizações](#outras-utiliza%c3%a7%c3%b5es)
+      - [Importante](#importante)
 
 ## Processos de Software
 
@@ -399,6 +414,7 @@ Tipos:
 - Deve dizer o que o sistema deve fazer
 
 Formato: 
+
 - Não existe um formato único
 - Informação no documento de requisitos depende do tipo de sistema a ser desenvolvido e da
 abordagem de desenvolvimento
@@ -463,18 +479,21 @@ menos detalhado
 - Usar a documentação do sistema como complemento
 
 #### Ferramentas
+
 - Simples
 - Criar diagramas UML (informal)
 
 ### UML as Blueprint
 
 #### Detalhar um sistema
+
 - De forma exaustiva
 - Tipo de utilização
   - Forward Engineering
   - Reverse Engineering
 
 #### Forward Engineering
+
 - Modelo detalhado (sistemas e partes do sistema)
 - Completo (especifica decisões)
 - Programador segue o modelo
@@ -482,9 +501,11 @@ menos detalhado
 - Programador -> detalhes internos do sistema
 
 #### Reverse Engineering
+
 - Informação detalhada de parte do código de um sistema
 
 #### Ferramentas
+
 - Mais complexas
 - Forward Engineering (Criar diagramas UML)
 - Reverse engineering
@@ -613,3 +634,168 @@ menos detalhado
 - Diagramas de classes: apenas os aspetos importantes de cada package
 - Diagramas de interação: ajudar a compreender alguns aspetos dos diagramas de classes
 - Máquinas de estados: ajudar a perceber o ciclo de vida das classes, apenas para classes mais complexas
+
+## Use Cases
+
+### O que sao
+
+- Técnicas para capturar requisitos funcionais
+- Descrevem interações entre Utilizadores e Sistema
+- Mostram como o sistema é usado
+
+### Cenarios
+
+- Descrição de uma utilização do sistema
+  - Sequência de passos
+  - Descrevem a interação entre o utilizador e o sistema
+
+- Use case
+  - Conjunto de cenários que são relacionados entre si através de um objetivo comum
+
+### Engenharia de requisitos
+
+- Deve responder às perguntas:
+  - O sistema a desenvolver serve para que?
+  - Deve fazer o que?
+- Para quem?
+
+### Elementos básicos
+
+- Atores
+  - Utilizadores do sistema (que interage com o sistema)
+- Use Cases
+  - Oferecidadas aos atores
+
+### Conteudo de um Use Case
+
+- Cenário principal de sucesso
+  - Caso normal
+  - Descritos através de uma sequência de passos numerados
+- Outros cenários alternativos
+  - Extensões
+  - Descritos através de variações do cenário principal
+
+### Cada Use Case
+
+- Tem um ator principal
+  - Invocar o Use Case para ter acesso ao serviço
+  - Ator que tem como objetivo
+    - o que o Use Case satisfaz
+    - normalmente, é quem inicia o Use Case
+
+- Podem existir outros atores (atores secundários)
+
+- Cada passo/etapa
+  - Representa uma interação entre o ator e o sistema
+  - Frases simples
+  - Descrever forma clara quem executa o passou ou etapa
+  - Deve perguntar o que pode correr de forma diferente ou correr mal.
+
+- Cada extensão
+  - Descreve uma alternativa ao caso normal
+  - Descreve uma condição
+  - Descreve quais as diferenças para o cenário principal
+
+- Como descrever uma extensão
+  - Começar indicar qual o passo do cenário principal que dá origem à extensão
+  - Continuar com a lista de passos
+  - No final, indicar para onde se deve continuar
+
+- Excelente ferramenta para fazer brainstorming
+
+- Perceber quais as condições das extensões, só depois pensar nos detalhes de cada uma.
+
+- Caso seja um passo/etapa complexo, pode ser outro use case
+
+- Pode incluir(slide 15 UML-Use Cases)
+  - Pré-condições
+  - Garantias
+  - Trigger
+
+### Como identificar atores
+
+- Quem vai beneficiar com o sistema?
+- Quem está interessado em certo requisito do sistema?
+- Onde, na organização, é que o sistema é usado?
+- Quem vai fornecer a informação ao sistema, quem vai usá-la, quem vai retirá-la?
+- O sistema usa algum recurso externo?
+- Existe alguém que tenha diferentes papéis (responsabilidades)?
+- Existem diversas pessoas com o mesmo papel? Ou parecidos?
+
+### Identificar Guidelines
+
+- Bem definida
+- Deve dar origem a “um resultado”
+- Não deve ser demasiado abstrata (ou de alto nível)
+- Não deve ser demasiado específica (ou de baixo nível)
+
+
+### Diagrama de Use Cases
+
+- Mostram
+  - Relações entre Atores e Use Cases
+  - Que atores invocam quais Use Cases
+  - Que Use Cases usam outros Use Cases
+  - Fronteira do sistema
+- Relações entre Use Cases
+  - include ou uses
+  - extends
+  - herança
+
+#### Atores
+
+- Não fazem parte do system
+- São representados no system
+- São cruciais para a análise
+
+#### Use Cases
+
+- descrevem as grandes funcionalidades dos atores
+- devem “dar” um resultado observável e útil para um ator
+- um use case especifica o comportamento do sistema (ou parte do sistema)
+- traduz-se num conjunto de sequências de ações (incluindo variantes)
+
+#### Associações
+
+- Relações entre:
+  -  Atores, Atores
+  -  Atores, Use Cases
+  -  Use Cases, Use Cases
+
+- Uma associação entre um ator e um Use Case indica que há comunicação entre eles e pode existir o envio/receção de mensagens
+
+- Tipos de Associações:
+  - Normais (entre Atores e Use Cases)
+  - Include ou Uses (entre Use Cases)
+  - Extend (entre Use Cases)
+  - Herança (entre Atores e/ou Use Cases)
+
+- `<<include>> ou <<uses>>`
+  - Representar comportamento comum entra\
+
+- `<<extend>>`
+  - representa
+    - variantes
+    - opções
+    - exceções
+
+- Generalizações/especializações
+  - herança
+  - aplicável a use cases e atores
+  - são particularizações
+  - possui as mesmas propriedades duma relação pai/filho
+
+#### Outras utilizações
+
+- Ajudam a conceber e validar a arquitetura do sistema
+- Podem ser uma base para os testes do sistema;
+- São um “ponto de referência” em todas as etapas de desenvolvimento
+
+#### Importante
+
+- Os Use Cases descrevem um sistema a um nível (muito) elevado de abstração
+- Não se diz como serão implementados
+- É uma disciplina de análise difícil
+- É fácil resvalar para a tecnologia
+- É fácil descer de nível de abstração
+- Cuidado com as especializações, extends e include/uses
