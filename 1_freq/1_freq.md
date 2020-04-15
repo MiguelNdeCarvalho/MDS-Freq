@@ -104,6 +104,8 @@
     - [Diagramas de Sequências](#diagramas-de-sequ%c3%aancias)
     - [Diagramas de comunicação](#diagramas-de-comunica%c3%a7%c3%a3o)
     - [Sequência vs comunicação](#sequ%c3%aancia-vs-comunica%c3%a7%c3%a3o)
+  - [Diagrama de Atividades](#diagrama-de-atividades)
+    - [Partições](#parti%c3%a7%c3%b5es)
 
 ## Processos de Software
 
@@ -1077,3 +1079,26 @@ menos detalhado
 - Comunicação
   - Quando se quer focar a ligação entre os participantes
   - Bom para explorar diferentes alternativas
+
+## Diagrama de Atividades 
+
+- Comportamento do sistema
+- Modelação dinâmica do sistema
+- Modelar/descrever
+  - Lógica procedimental
+  - Processos de negócio
+  - Fluxos de trabalho
+- Semelhantes aos fluxogramas
+- Representam atividades
+  - Transições entre atividades (quando e porquê)
+- Caso “particular de estado”
+  - Estados que correspondem a atividades, ações ou operações
+
+### Partições 
+
+- Diagramas de atividades mostram o que acontece
+  - Mas não mostram quem faz o quê
+- Partições
+  – Dividir o diagrama de atividades
+  – Mostrar quem faz o quê
+  - Swim lanes
