@@ -100,6 +100,10 @@
     - [Operações e atributos estáticos](#opera%c3%a7%c3%b5es-e-atributos-est%c3%a1ticos)
     - [Propriedades derivadas](#propriedades-derivadas)
     - [Interfaces e Classes Abstratas](#interfaces-e-classes-abstratas)
+  - [Diagramas de Iteração](#diagramas-de-itera%c3%a7%c3%a3o)
+    - [Diagramas de Sequências](#diagramas-de-sequ%c3%aancias)
+    - [Diagramas de comunicação](#diagramas-de-comunica%c3%a7%c3%a3o)
+    - [Sequência vs comunicação](#sequ%c3%aancia-vs-comunica%c3%a7%c3%a3o)
 
 ## Processos de Software
 
@@ -1005,3 +1009,71 @@ menos detalhado
 - Interface abstrata
   - Classe sem implementação
   - Todos os elementossão abstratos
+
+
+## Diagramas de Iteração
+
+- Descrevem
+  - colaboração entre vários objetos
+  - num determinado comportamento
+- UML fornece vários diagramas de interação
+  - Diagramas de sequência
+  - Diagramas de colaboração
+
+- Diagramas de interação
+  - Descrevem/capturam o comportamento
+  - Num único cenário de utilização
+    - Conjunto de objetos
+- Diagramas de sequência
+  - Focam-se no tempo
+  - Ordenação temporal das mensagens
+- Diagramas de comunicação
+  - Ou diagramas de colaboração (UML 1.x)
+  - Focam-se na organização dos objetos e nos dados
+
+### Diagramas de Sequências
+
+- Mostram
+  - Interação entre participantes numa operação/cenário
+  - Mensagens entre participantes
+  - Focam-se no tempo
+
+- Diferenças entre os dois cenários
+  - Forma como os participantes interagem entre si
+
+- Controlo centralizado vs distribuído
+  - Centralizado (feito no mesmo local)
+  - Distribuído (distribuido por todos os participantes)
+    - Preferível
+    - “Junta” dados com comportamentos
+    - Muito “orientado a objetos”
+
+- Mensagens síncronas e assíncronas
+  - Síncronas (Necessita de esperar pela mensagem)
+  - Assíncrona (Não precisa de esperar por uma resposta)
+    - Usadas tipicamente em sistemas multi-thread
+
+### Diagramas de comunicação
+
+- Foco nos links de dados entre os participantes
+- Participantes
+- Links
+  - Entre os participantes
+  - Mostram como cada participante se liga a outro
+  - Podem representar
+    - Instâncias de associações entre classes
+    - Links transientes
+- Mensagens entre os participantes
+  - Usando os links
+  - Numerar as mensagens, para saber a sequência correta
+
+### Sequência vs comunicação
+
+- “Equivalentes entre si”
+  - A partir de um, consegue-se chegar ao outro
+  - Diagramas de comunicação não têm notação para lógica de controlo
+- Sequência
+  - Usar quando se quer focar a sequência de chamadas
+- Comunicação
+  - Quando se quer focar a ligação entre os participantes
+  - Bom para explorar diferentes alternativas
