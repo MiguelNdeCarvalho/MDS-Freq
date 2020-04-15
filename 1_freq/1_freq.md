@@ -83,6 +83,23 @@
       - [Associações](#associa%c3%a7%c3%b5es)
     - [Outras utilizações](#outras-utiliza%c3%a7%c3%b5es)
     - [Importante](#importante)
+  - [Diagramas de Classes](#diagramas-de-classes)
+    - [Análise Conceptual](#an%c3%a1lise-conceptual)
+    - [Diagramas de Classes](#diagramas-de-classes-1)
+    - [Classes](#classes)
+      - [Propriedades](#propriedades)
+    - [Associações / Relações (23)](#associa%c3%a7%c3%b5es--rela%c3%a7%c3%b5es-23)
+      - [Atributos](#atributos)
+      - [Atributos e Associações](#atributos-e-associa%c3%a7%c3%b5es)
+    - [Multiplicidade](#multiplicidade)
+    - [Associações bidirecionais](#associa%c3%a7%c3%b5es-bidirecionais)
+    - [Operações](#opera%c3%a7%c3%b5es)
+    - [Dependências](#depend%c3%aancias)
+    - [Restrições](#restri%c3%a7%c3%b5es)
+    - [Responsabilidades](#responsabilidades)
+    - [Operações e atributos estáticos](#opera%c3%a7%c3%b5es-e-atributos-est%c3%a1ticos)
+    - [Propriedades derivadas](#propriedades-derivadas)
+    - [Interfaces e Classes Abstratas](#interfaces-e-classes-abstratas)
 
 ## Processos de Software
 
@@ -799,3 +816,192 @@ menos detalhado
 - É fácil resvalar para a tecnologia
 - É fácil descer de nível de abstração
 - Cuidado com as especializações, extends e include/uses
+
+## Diagramas de Classes
+
+- Conceito bases
+  - Representa o essencial e é usado em todos os tipos de diagrama de classes.
+  - Nem sempre são necessários.
+
+- Processo de desenvolvimento:
+  - Análise/levantamento de requisitos;
+  - **Análise conceptual**;
+  - Desenho;
+  - Implementação;
+  - Testes;
+
+### Análise Conceptual
+
+- use cases (ponto de vista utilizador)
+- classes e relações (estrutura dos “dados”)
+- interações (modelação dos processos)
+- constraints (restrições, regras de negócio)
+
+### Diagramas de Classes
+
+- Classes: "coisas" do problema
+  - Identidade;
+  - atributos;
+  - operações
+- Descrevem:
+  - Tipos de objetos no sistema
+  - Relações que existem entre objetos
+- Indica:
+  - Propriedades das classes
+  - Operações dos objetos
+
+- Interessa para o meu sistema?
+  - sim, é um ator importante
+
+- Vou guardar informação sobre ele?
+- depende
+- preciso?
+  - “dará” origem a uma classe
+- não preciso?
+  - não “dará” origem a uma classe
+
+### Classes
+
+#### Propriedades
+
+- Elementos estruturais de uma classe
+- “Tipicamente” são “campos/atributos” de uma classe
+- Conceito único (duas notações distintas)
+- Possíveis notações:
+  - Atributos
+  - Associações
+  - Embora pareçam diferentes, são o mesmo
+
+### Associações / Relações (23)
+
+#### Atributos
+
+- Podem ser entre classes
+- Pode ser recursivas (sobre a própria classe)
+
+#### Atributos e Associações
+
+- Quando usar Atributos ou Associações?
+  - Na teoria: são “equivalentes”
+- Regra geral
+  - Usar atributos:
+    - Tipos de dados simples
+    - **Ex:** Datas, booleanos, inteiros, etc…
+  - Usar associações:
+    - Tipos de dados complexos
+    - Classes importantes do problema
+    - **Ex:** cliente, encomenda, etc...
+
+### Multiplicidade
+
+- Indica quantos objetos podem pertencer uma propriedade
+- Possibilidades
+  - Limite inferior
+    - >= 0
+  -  Limite superior
+     - >0 ou *(ilimitado)
+  - Limite inferior == limite superior
+    - Pode usar-se apenas um nº: 1 .. 1 → 1
+  - Caso especial
+    - * → 0 .. *
+
+- Nos atributos
+  - Opcional
+    - Limite inferior: 0
+  - Obrigatório
+    - Limite inferior: >= 1
+  - Singlevalued
+    - Limite superior: 1
+  - Multivalued
+    - Limite superior: >1, normalmente *
+
+### Associações bidirecionais
+
+- Duas propriedades relacionadas
+  - “seguir” as propriedades em qualquer sentido
+
+### Operações 
+
+- Ações feitas por uma classe
+- Métodos de uma classe
+
+### Dependências
+
+- Dependências entre dois elementos
+  - Um “cliente” e um “fornecedor”
+  - Se a alteração da definição de um elemento (“fornecedor”)
+    - implicar alterações de outro elemento (“cliente”)
+
+- Quando pode existir dependência
+  - Uma classe envia uma “mensagem” a outra;
+  - Uma classe “tem” outra classe como parte dos seus dados;
+  - Uma classe “menciona” outra através de parâmetros ou atributos;
+  - Se uma classe muda o seu interface, qualquer classe que “comunica” com ela, pode deixar de conseguir comunicar
+
+- Importância
+  - Crescimento do sistema
+    - Maior complexidade
+    - Maior rede de dependências
+    - Gestão/controlo de dependências
+      - Previne “alguns” problemas inerentes à alteração dos sistemas
+- Em UML
+  - Dependências entre qualquer tipo de elementos
+  - Usadas para mostrar quando alterações num elemento, podem provocar alterações noutro elemento
+
+- Implícitas em
+  - Associações “navegáveis”
+  - Generalizações
+
+- Regras
+  - Minimizar dependências
+  - Cuidado com dependências cíclicas
+  - Incluir/“mostrar” apenas dependências importantes nos diagramas
+
+### Restrições
+
+- Diagramas de Classes
+  - Estrutura do problema
+  - Especificam restrições globais do sistema
+    - Que elementos, como são compostos, quais as suas relações
+    - Não conseguem especificar todas as restrições
+  - Restrições (Constraint Rules)
+    - Qualquer tipo de restrição sobre o sistema
+      - Linguagem natural
+      - Linguagem de programação
+      - UML Object Constraint Language (OCL)
+    - Representado como uma “nota”
+      - Restrição coloca-se entre { }
+
+### Responsabilidades
+
+- Algo que um objeto/entidade deve fazer
+- É responsável por fazer determinada operação/tarefa
+
+### Operações e atributos estáticos
+
+- Operações e atributos de classes “normais”
+  - Aplicam-se a uma instância/objeto da classe
+  - Dependem do objeto
+  - Não fazem sentido sem um objeto
+
+- Operações e atributos de classe estáticos
+  - Referem-se à classe e não aos objetos
+  - São independentes dos objetos
+  - Diagrama de classes
+    - Representados com um sublinhado
+
+### Propriedades derivadas
+
+- Calculadas com base noutras propriedades
+- Quando usar
+  - Uma propriedade que deriva de outras
+  - Forma de especificar uma “restrição” entre valores
+
+### Interfaces e Classes Abstratas
+
+- Classe abstrata
+  - Classe que não pode ser instanciada
+  - Instancia-se uma sub classe
+- Interface abstrata
+  - Classe sem implementação
+  - Todos os elementossão abstratos
