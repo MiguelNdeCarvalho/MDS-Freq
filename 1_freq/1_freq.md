@@ -106,6 +106,15 @@
     - [Sequência vs comunicação](#sequ%c3%aancia-vs-comunica%c3%a7%c3%a3o)
   - [Diagrama de Atividades](#diagrama-de-atividades)
     - [Partições](#parti%c3%a7%c3%b5es)
+  - [Desenvolvimento Ágil de Software](#desenvolvimento-%c3%81gil-de-software)
+    - [Planos e métodos ágeis](#planos-e-m%c3%a9todos-%c3%a1geis)
+  - [Desenvolvimento ágil de Software](#desenvolvimento-%c3%a1gil-de-software)
+    - [Extreme Programming](#extreme-programming)
+    - [XP e métodos ágeis](#xp-e-m%c3%a9todos-%c3%a1geis)
+    - [Refactoring](#refactoring)
+    - [Automatação de Testes](#automata%c3%a7%c3%a3o-de-testes)
+    - [Gestão de projetos ágeis](#gest%c3%a3o-de-projetos-%c3%a1geis)
+      - [Scrum](#scrum)
 
 ## Processos de Software
 
@@ -215,6 +224,7 @@
 **[`^        para cima        ^`](#)**
 
 ### Requisitos
+**[`^        para cima        ^`](#)**
 
 #### O que sao requisitos
 
@@ -298,7 +308,7 @@ Tipos:
   - Entidade que desenvolve os requisitos;
 
 ### Identificacao dos Requisitos
-
+**[`^        para cima        ^`](#)**
 - Descoberta de requisitos;
 - Trabalho conjunto da equipa técnica com os clientes por forma a descobrir:
   - o domínio da aplicação;
@@ -334,6 +344,8 @@ Tipos:
   - Escrita dos requisitos
 
 ### Cenarios
+
+**[`^        para cima        ^`](#)**
 
 - User story estruturada;
 - Devem incluir:
@@ -471,6 +483,8 @@ menos detalhado
 
 ## UML - Introdução
 
+**[`^        para cima        ^`](#)**
+
 ### O que é?
 
 - Linguagem de modelação gráfica
@@ -508,6 +522,8 @@ menos detalhado
 
 ### UML as Blueprint
 
+**[`^        para cima        ^`](#)**
+
 #### Detalhar um sistema
 
 - De forma exaustiva
@@ -537,6 +553,8 @@ menos detalhado
 
 
 ### UML as programming language
+
+**[`^        para cima        ^`](#)**
 
 - Maior quantidade de modelos UML
   - Programção mais mecânica
@@ -583,6 +601,8 @@ menos detalhado
 
 ### Conceptual and software modeling
 
+**[`^        para cima        ^`](#)**
+
 - Perspetiva de software
   - Elementos UML
     - Mapeados diretamente para elementos de software
@@ -593,6 +613,8 @@ menos detalhado
     - Vocabulário de um domínio específico
 
 ### Notações e meta-modelos
+
+**[`^        para cima        ^`](#)**
 
 - UML define:
   - Notações
@@ -611,6 +633,8 @@ menos detalhado
 
 ### Diagramas UML
 
+**[`^        para cima        ^`](#)**
+
 - UML define:
   - Actividades
   - Classes
@@ -620,6 +644,8 @@ menos detalhado
   - Casos de Uso
 
 ### UML válido
+
+**[`^        para cima        ^`](#)**
 
 - O que é?
   - O que está definido como bem formado na sua especificação
@@ -637,6 +663,8 @@ menos detalhado
 
 
 ### UML e processos de desenvolvimento
+
+**[`^        para cima        ^`](#)**
 
 #### Análise de requisitos
 
@@ -659,6 +687,8 @@ menos detalhado
 - Máquinas de estados: ajudar a perceber o ciclo de vida das classes, apenas para classes mais complexas
 
 ## Use Cases
+
+**[`^        para cima        ^`](#)**
 
 ### O que sao
 
@@ -700,6 +730,8 @@ menos detalhado
 
 ### Cada Use Case
 
+**[`^        para cima        ^`](#)**
+
 - Tem um ator principal
   - Invocar o Use Case para ter acesso ao serviço
   - Ator que tem como objetivo
@@ -737,6 +769,8 @@ menos detalhado
 
 ### Como identificar atores
 
+**[`^        para cima        ^`](#)**
+
 - Quem vai beneficiar com o sistema?
 - Quem está interessado em certo requisito do sistema?
 - Onde, na organização, é que o sistema é usado?
@@ -766,6 +800,8 @@ menos detalhado
   - herança
 
 #### Atores
+
+**[`^        para cima        ^`](#)**
 
 - Não fazem parte do system
 - São representados no system
@@ -816,6 +852,8 @@ menos detalhado
 
 ### Importante
 
+**[`^        para cima        ^`](#)**
+
 - Os Use Cases descrevem um sistema a um nível (muito) elevado de abstração
 - Não se diz como serão implementados
 - É uma disciplina de análise difícil
@@ -824,6 +862,8 @@ menos detalhado
 - Cuidado com as especializações, extends e include/uses
 
 ## Diagramas de Classes
+
+**[`^        para cima        ^`](#)**
 
 - Conceito bases
   - Representa o essencial e é usado em todos os tipos de diagrama de classes.
@@ -844,6 +884,8 @@ menos detalhado
 - constraints (restrições, regras de negócio)
 
 ### Diagramas de Classes
+
+**[`^        para cima        ^`](#)**
 
 - Classes: "coisas" do problema
   - Identidade;
@@ -868,6 +910,8 @@ menos detalhado
 
 ### Classes
 
+**[`^        para cima        ^`](#)**
+
 #### Propriedades
 
 - Elementos estruturais de uma classe
@@ -879,6 +923,8 @@ menos detalhado
   - Embora pareçam diferentes, são o mesmo
 
 ### Associações / Relações (23)
+
+**[`^        para cima        ^`](#)**
 
 #### Atributos
 
@@ -899,6 +945,8 @@ menos detalhado
     - **Ex:** cliente, encomenda, etc...
 
 ### Multiplicidade
+
+**[`^        para cima        ^`](#)**
 
 - Indica quantos objetos podem pertencer uma propriedade
 - Possibilidades
@@ -965,6 +1013,8 @@ menos detalhado
 
 ### Restrições
 
+**[`^        para cima        ^`](#)**
+
 - Diagramas de Classes
   - Estrutura do problema
   - Especificam restrições globais do sistema
@@ -1014,6 +1064,8 @@ menos detalhado
 
 
 ## Diagramas de Iteração
+
+**[`^        para cima        ^`](#)**
 
 - Descrevem
   - colaboração entre vários objetos
@@ -1082,6 +1134,8 @@ menos detalhado
 
 ## Diagrama de Atividades 
 
+**[`^        para cima        ^`](#)**
+
 - Comportamento do sistema
 - Modelação dinâmica do sistema
 - Modelar/descrever
@@ -1102,3 +1156,81 @@ menos detalhado
   – Dividir o diagrama de atividades
   – Mostrar quem faz o quê
   - Swim lanes
+
+## Desenvolvimento Ágil de Software
+
+**[`^        para cima        ^`](#)**
+
+- Desenvolvimento e entrega rápida do software é muito importante
+  - Os requisitos alteram-se rapidamente (vantagens);
+  - Dificl produzir um conjunto de requisitos estaveis (Desvantagens);
+- Especificação, desenho e implementação estão intercaladas.
+- São desenvolvidos com várias versões.
+- Entregas constantes de novas versões (avaliação)
+
+### Planos e métodos ágeis
+
+![Ageis](imgs/ageis.jpg)
+
+- Desenvolvimento baseado em planos:
+  - Etapas de desenvolvimento separadas.
+    - Output de cada etapa é planeamento com antecedência
+  - Pode não ser o modelo **Waterfall** .
+    - É possível que também para ser o **incremental**, baseado em planos.
+- Métodos Ágeis
+  - Especificação, desenho, implementação e testes (intercalados)
+  - Foco no código
+  - Redução na documentação
+  - Resposta de forma rápida à alteração de requisitos
+
+## Desenvolvimento ágil de Software
+
+**[`^        para cima        ^`](#)**
+
+### Extreme Programming
+
+- Várias versões por dia;
+- Incrementos são entregues aos clientes frequentemente;
+- Testes devem ser executados antes de fazer uma nova versão
+
+### XP e métodos ágeis
+
+- Defende que não se deve antecipar alterações;
+- Propõem melhorias constantes ao código.
+
+### Refactoring
+
+- Procura de possivéis melhorias no software;
+- Melhora a compreensão de software;
+- Alteração mais fáceis de fazer dado que o código está bem estruturado.
+
+### Automatação de Testes
+
+- Testes escritos como componentes executáveis
+- Antes da implementação das funcionalidasds
+- Testes devem:
+  - ser isolados/stand-alone
+  - invocar a funcionalidade a ser testada
+  - verificar se o output está de acordo com as especificações
+
+### Gestão de projetos ágeis
+
+**[`^        para cima        ^`](#)**
+
+#### Scrum
+
+- Método ágil de desenvolvimento de software
+  - Planeamento geral do processo;
+  - Estabelecer objetivos do projeto e deesenhar e arquitetura de software.
+- Spint cycles:
+  - Em cada ciclo é desenvolvido parte do sistema
+- Fim do projeto:
+  - Termina documentação necessária;
+  - Avaliar todos os aspetos do projeto.
+- Benefícios:
+  - Produto partido em partes mais pequenas e fácil compreensão
+  - Requisitos não estáveis não afetam o projeto
+  - Toda a equipa tem visibilidade sobre todo o projeto.
+- Problemas:
+  - Muito Informal;
+  - Desenhados para equipas pequenas. 
