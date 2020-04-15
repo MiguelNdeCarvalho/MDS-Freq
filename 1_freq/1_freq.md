@@ -81,8 +81,8 @@
       - [Atores](#atores)
       - [Use Cases](#use-cases-2)
       - [Associações](#associa%c3%a7%c3%b5es)
-      - [Outras utilizações](#outras-utiliza%c3%a7%c3%b5es)
-      - [Importante](#importante)
+    - [Outras utilizações](#outras-utiliza%c3%a7%c3%b5es)
+    - [Importante](#importante)
 
 ## Processos de Software
 
@@ -785,13 +785,13 @@ menos detalhado
   - são particularizações
   - possui as mesmas propriedades duma relação pai/filho
 
-#### Outras utilizações
+### Outras utilizações
 
 - Ajudam a conceber e validar a arquitetura do sistema
 - Podem ser uma base para os testes do sistema;
 - São um “ponto de referência” em todas as etapas de desenvolvimento
 
-#### Importante
+### Importante
 
 - Os Use Cases descrevem um sistema a um nível (muito) elevado de abstração
 - Não se diz como serão implementados
