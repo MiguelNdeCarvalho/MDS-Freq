@@ -2,25 +2,72 @@
 
 ## Tópicos
 
-- [Processos de Software (1º PowerPoint)](#processos-de-software)
-  - [Modelos de Processos de Software](#modelos-de-processos-de-software)
-    - [Modelo Waterfall (Cascata)](#modelo-waterfall-cascata)
-      - [Etapas](#-etapas-waterfall)
-      - [Desvantagens](#-desvantagens-waterfall)
-      - [Problemas](#-problemas-waterfall)
-      - [Utilização](#-utilizacao-waterfall)
-    - [Modelo Incremental](#modelo-incremental)
-      - [Vantagens](#-vantagens-incremental)
-      - [Problemas](#-problemas-incremental)
-      - [Integração e Configuração](#-integracao-e-configuracao-incremental)
-      - [Tipos de componentes disponiveis](#-tipos-de-componentes-disponiveis-incremental)
-    - [Modelo Baseado em reutilizações](#modelo-baseados-em-reutilizacao)
-      - [Integração e configuração](#integracao-e-configuracao)
-        - [Etapas do processo](#-etapas-do-processo)
-        - [Vantagens](#-vantagens)
-        - [Desvantagens](#-desvantagens)
-- [Engenharia de requisitos (2º PowerPoint)](#processos-de-software)
-  - [O que s]
+- [1ª Frequência de MDS](#1%c2%aa-frequ%c3%aancia-de-mds)
+  - [Tópicos](#t%c3%b3picos)
+  - [Processos de Software](#processos-de-software)
+    - [Modelos de Processos de Software](#modelos-de-processos-de-software)
+      - [Modelo Waterfall (Cascata)](#modelo-waterfall-cascata)
+        - [->Etapas Waterfall](#etapas-waterfall)
+        - [->Desvantagens Waterfall](#desvantagens-waterfall)
+        - [->Problemas Waterfall](#problemas-waterfall)
+        - [->Utilizacao Waterfall](#utilizacao-waterfall)
+      - [Modelo Incremental](#modelo-incremental)
+        - [->Vantagens Incremental](#vantagens-incremental)
+        - [->Problemas Incremental](#problemas-incremental)
+        - [->Integracao e Configuracao Incremental](#integracao-e-configuracao-incremental)
+        - [->Tipos de componentes disponiveis Incremental](#tipos-de-componentes-disponiveis-incremental)
+      - [Modelo baseados em reutilizacao](#modelo-baseados-em-reutilizacao)
+        - [Integracao e configuracao](#integracao-e-configuracao)
+          - [->Etapas do Processo](#etapas-do-processo)
+          - [->Vantagens](#vantagens)
+          - [->Desvantagens](#desvantagens)
+  - [Engenharia de Requisitos](#engenharia-de-requisitos)
+    - [Requisitos](#requisitos)
+      - [O que sao requisitos](#o-que-sao-requisitos)
+      - [Tipos de requisitos](#tipos-de-requisitos)
+      - [System stakeholders](#system-stakeholders)
+      - [Requisitos funcionais](#requisitos-funcionais)
+      - [Requisitos nao funcionais](#requisitos-nao-funcionais)
+  - [Processos Engenharia de Requisitos](#processos-engenharia-de-requisitos)
+    - [Identificacao dos Requisitos](#identificacao-dos-requisitos)
+      - [Problemas na Identificacao dos Requisitos](#problemas-na-identificacao-dos-requisitos)
+      - [Processo de identificacao e analise de requisitos](#processo-de-identificacao-e-analise-de-requisitos)
+    - [Cenarios](#cenarios)
+    - [Especificacao de requisitos](#especificacao-de-requisitos)
+      - [Formas de escrever os requisitos](#formas-de-escrever-os-requisitos)
+      - [Requisitos e desenho do sistema](#requisitos-e-desenho-do-sistema)
+      - [Especificação em língua natural](#especifica%c3%a7%c3%a3o-em-l%c3%adngua-natural)
+      - [Escrita dos requisitos – Guião](#escrita-dos-requisitos-%e2%80%93-gui%c3%a3o)
+      - [Problemas da Linguagem Natural](#problemas-da-linguagem-natural)
+      - [Especificações estruturadas](#especifica%c3%a7%c3%b5es-estruturadas)
+      - [Espeicificações baseadas em formulários](#espeicifica%c3%a7%c3%b5es-baseadas-em-formul%c3%a1rios)
+      - [Especificação tabular](#especifica%c3%a7%c3%a3o-tabular)
+      - [Use Cases](#use-cases)
+      - [Documentos de requisitos](#documentos-de-requisitos)
+      - [Validação dos requisitos](#valida%c3%a7%c3%a3o-dos-requisitos)
+      - [Gestão dos requisitos](#gest%c3%a3o-dos-requisitos)
+  - [UML - Introdução](#uml---introdu%c3%a7%c3%a3o)
+    - [O que é?](#o-que-%c3%a9)
+    - [Tipos de utilização](#tipos-de-utiliza%c3%a7%c3%a3o)
+    - [UML as Sketch](#uml-as-sketch)
+      - [Forward Engineering](#forward-engineering)
+      - [Reverse Engineering](#reverse-engineering)
+      - [Ferramentas](#ferramentas)
+    - [UML as Blueprint](#uml-as-blueprint)
+      - [Detalhar um sistema](#detalhar-um-sistema)
+      - [Forward Engineering](#forward-engineering-1)
+      - [Reverse Engineering](#reverse-engineering-1)
+      - [Ferramentas](#ferramentas-1)
+    - [UML as programming language](#uml-as-programming-language)
+      - [Problemas](#problemas)
+    - [Conceptual and software modeling](#conceptual-and-software-modeling)
+    - [Notações e meta-modelos](#nota%c3%a7%c3%b5es-e-meta-modelos)
+    - [Diagramas UML](#diagramas-uml)
+    - [UML válido](#uml-v%c3%a1lido)
+    - [UML e processos de desenvolvimento](#uml-e-processos-de-desenvolvimento)
+      - [Análise de requisitos](#an%c3%a1lise-de-requisitos)
+      - [Design](#design)
+      - [Documentação](#documenta%c3%a7%c3%a3o)
 
 ## Processos de Software
 
@@ -382,3 +429,187 @@ menos detalhado
 - Estabelecer um processo formal
   - efetuar alterações nos requisitos
   - estabelecer ligações entre requisitos
+
+## UML - Introdução
+
+### O que é?
+
+- Linguagem de modelação gráfica
+- Descrever e desennhar sistemas de software
+
+### Tipos de utilização
+
+- Depende do utilizador
+- Esboço (sketch)
+- Blueprint (detalhar um sistema)
+
+### UML as Sketch
+
+- Descrever detalhes de um sistema
+- Nível de abstração elevado
+- Tipo de utilização (Forward e Reverse Engineering)
+
+#### Forward Engineering
+
+- Desenhar um diagrama antes de escrever código;
+- Discutir ideia e alternativas com a equipa
+- Focar no importante
+- Não pensar em código
+
+#### Reverse Engineering
+
+- Desenhar o diagrama depois de existir código
+- Usar os sketches para explicar partes do sistema
+- Usar a documentação do sistema como complemento
+
+#### Ferramentas
+- Simples
+- Criar diagramas UML (informal)
+
+### UML as Blueprint
+
+#### Detalhar um sistema
+- De forma exaustiva
+- Tipo de utilização
+  - Forward Engineering
+  - Reverse Engineering
+
+#### Forward Engineering
+- Modelo detalhado (sistemas e partes do sistema)
+- Completo (especifica decisões)
+- Programador segue o modelo
+- Designer -> modelo da interface do sistema
+- Programador -> detalhes internos do sistema
+
+#### Reverse Engineering
+- Informação detalhada de parte do código de um sistema
+
+#### Ferramentas
+- Mais complexas
+- Forward Engineering (Criar diagramas UML)
+- Reverse engineering
+  - Analisam códio fonte
+  - Geram diagrams UML
+
+
+### UML as programming language
+
+- Maior quantidade de modelos UML
+  - Programção mais mecânica
+  - UML para programar
+- Programadores
+  - Usam diagramas UML (que é o source code)
+  - Compilados diretamente
+- Ferramentas muito mais complexas e sofisticadas
+- Model Driven Architecture (MDA)
+  - Abordagem para se usar UML (como linguagem de programação)
+  - Confunde-se com UML (apenas usa UML como linguagem base dos modelos)
+- Abordagem MDA
+  - Trabalho dividido em duas áreas
+    1. PIM (Plataform Independent Model)
+      - Representação do Sistema
+      - Independente da plataforma
+      - UML
+    2. PSM (Plataform Specific Model)
+      - Representação do sistema
+      - Dependente da plataforma
+      - Um para cada platafora/tecnologia
+      - Pode ser UML
+  - Modelo PIM transformado em PSM (ferramentas específicas)
+  - Modelo PSM transformado em código (pode ser automatizado)
+
+- Executable UML
+  - Parecido com MDA
+    - Modelos independentes da plataforma (parecidos com os modelos PIM de MDA)
+    - Model Compiler
+      - Compila o modelo incial
+      - Sistema executável
+      - Num único passo
+      - Não necessita dos PSM (Plataform Specific Models)
+    - Subset do UML
+      - Não usa todas as características do UML
+      - Mais simples do que UML
+
+#### Problemas
+
+- Ferramentas
+  - Maturo
+- Produtividade
+  - Executable UML
+
+### Conceptual and software modeling
+
+- Perspetiva de software
+  - Elementos UML
+    - Mapeados diretamente para elementos de software
+- Perspetiva conceptual
+  - Elementos UML
+    - Descrição de conceitos de uma aplicação
+    - Não são elementos de software
+    - Vocabulário de um domínio específico
+
+### Notações e meta-modelos
+
+- UML define:
+  - Notações
+    - Elementos dos modelos
+    - Sintaxe gráfica da linguagem de modelação
+  - Meta-modelo
+    - Define conceitos da linguagem
+  - Linguagens gráficas
+    - Pouco Rigor
+    - Muito informal, mas útil
+  - Importância do Meta-Modelo
+    - Depende da utilização
+    - Sketching
+    - Blueprinting
+    - UML as programming language
+
+### Diagramas UML
+
+- UML define:
+  - Actividades
+  - Classes
+  - Objectos
+  - Sequência
+  - Estado máquina
+  - Casos de Uso
+
+### UML válido
+
+- O que é?
+  - O que está definido como bem formado na sua especificação
+- Na prática
+  - Muito complexo
+  - Aberto a várias interpretações
+  - Tem diferentes utilizações
+- Importância
+  - Sketching ou blueprinting
+    - Pode ser usado
+    - Pouco importante
+    - Mais importante, implica m melhor design
+  - UML as programming language
+    - Essencial ou não funcionará corretamente
+
+
+### UML e processos de desenvolvimento
+
+#### Análise de requisitos
+
+- Use cases: Descrevem como é que os utilizadores interagem com o sistema
+- Diagrama de classes: Usando uma perspetiva conceptual, podem ser usados para construir um vocabulário sobre o domínio do sistema
+- Diagrama de atividades: Workflow/fluxo de trabalho na empresa, mostrando como é que o software interage com atividades humanas. Mostrar o contexto dos use cases, bem como detalhes de use cases complexos.
+- Diagramas de estados: Se o sistema tiver um life cycle interessante, com diferentes estados e eventos que fazem mudar o estado
+
+#### Design
+
+- Diagrama de classes: a partir de uma perspetiva do software. Podem mostrar classes do sistema e como estão interligadas.
+- DIagramas de sequências: Workflow/fluxo de trabalho na empresa, mostrando como é que o software interage com atividades humanas. Mostrar o contexto dos use cases, bem como detalhes de use cases complexos.
+- Diagramas de estados: Se o sistema tiver um life cycle interessante, com diferentes estados e eventos que fazem mudar o estado
+
+#### Documentação
+
+- Package diagram: mapa lógico do sistema
+- Diagramas de classes: apenas os aspetos importantes de cada package
+- Diagramas de interação: ajudar a compreender alguns aspetos dos diagramas de classes
+- Máquinas de estados: ajudar a perceber o ciclo de vida das classes, apenas para classes mais complexas
