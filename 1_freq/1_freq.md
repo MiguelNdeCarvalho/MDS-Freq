@@ -144,6 +144,8 @@
 
 ##### ->Desvantagens Waterfall
 
+- Cada etapa só inicia quando o anterior termina;
+- Divisão inflexivél do projeto;
 - Dificuldade em incluir alterações depois de dar início ao
 
 ##### ->Problemas Waterfall
